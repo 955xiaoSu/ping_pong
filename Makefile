@@ -1,0 +1,18 @@
+ENTRANCE = ping_pong_main.cpp
+CONSTANT = ping_pong_const.h
+FUNCTION = ping_pong.cpp
+HEADER_FILE = ping_pong.h
+TARGET = ping_pong_game
+TEST_TARGET = ping_pong_game_test
+
+release: $(ENTRANCE) $(CONSTANT) $(FUNCTION) $(HEADER_FILE)
+	g++ -DRELEASE $(ENTRANCE) $(CONSTANT) $(FUNCTIO) $(HEADER_FILE) -o $(TARGET)
+	./$(TARGET)
+
+demo: $(ENTRANCE) $(CONSTANT) $(FUNCTION) $(HEADER_FILE)
+	g++ -DDEMO $(ENTRANCE) $(CONSTANT) $(FUNCTIO) $(HEADER_FILE) -o $(TARGET)
+	./$(TARGET)
+
+test: $(ENTRANCE) $(CONSTANT) $(FUNCTION) $(HEADER_FILE)
+	g++ -DDEBUG $(ENTRANCE) $(CONSTANT) $(FUNCTIO) $(HEADER_FILE) -o $(TEST_TARGET)
+	./$(TEST_TARGET)
