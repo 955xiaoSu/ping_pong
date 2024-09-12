@@ -8,7 +8,7 @@
  * 最终输出比赛的结果（包括冠亚军、每支队伍的比赛胜负场次等信息）
  */
 
-#include "ping_pong.cpp"
+#include "ping_pong.h"
 
 #ifdef TEST
 void check_two_teams() {

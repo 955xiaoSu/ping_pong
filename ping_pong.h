@@ -42,6 +42,10 @@ class Team {
         }
 };
 
+void getOnePoint(uint16_t& team1_points, uint16_t& team2_points);
+void matchOnce(Team& team1, Team& team2);
+void match(Team& team1, Team& team2);
+
 /* 64支 参赛队伍的名称 */
 const std::string team_name[64] = {
     "China", "USA", "Japan", "Korea", "Russia", "Germany", "France", "UK",
